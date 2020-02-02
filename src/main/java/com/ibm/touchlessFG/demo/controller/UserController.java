@@ -35,6 +35,7 @@ public class UserController {
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public Users getUsers(@RequestParam(required = true) final String userId) {
+		
 		return userService.findOneByName(userId);
 	}
 
