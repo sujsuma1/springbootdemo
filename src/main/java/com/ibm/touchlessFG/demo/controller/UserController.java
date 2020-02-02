@@ -34,7 +34,6 @@ public class UserController {
 	private final ExecutionsService executionsService;
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public Users getUsers(@RequestParam(required = true) final String userId) {
-		
 		return userService.findOneByName(userId);
 	}
 
