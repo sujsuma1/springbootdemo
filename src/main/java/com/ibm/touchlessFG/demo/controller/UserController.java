@@ -32,7 +32,6 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	private final ExecutionsService executionsService;
-
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public Users getUsers(@RequestParam(required = true) final String userId) {
 		
